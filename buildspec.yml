@@ -1,5 +1,4 @@
 --- 
-JAVA_HOME: /opt/java-8-openjdk-amd64
 artifacts: ~
 build: ~
 commands: 
