@@ -2,7 +2,7 @@
 artifacts: 
   discard-paths: true
   files: 
-    - target/my-web-app.war
+    - /tmp/my-web-app.war
 phases: 
   post_build: 
     commands: 
