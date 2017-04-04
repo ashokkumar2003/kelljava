@@ -1,12 +1,11 @@
 --- 
 artifacts: 
-  discard-paths: true
-  artifact:
   files: 
-    - my-web-app.war
+    - "**/*"
 phases: 
-  post_build: 
+  build: 
     commands: 
       - "echo Build completed on `date`"
-      - "aws s3 sync my-web-app.war s3://ashokjenkins"
+      - "mvn package"
 version: 0.1
+
