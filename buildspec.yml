@@ -7,5 +7,5 @@ phases:
   post_build: 
     commands: 
       - "echo Build completed on `date`"
-      - "aws s3 sync myapp.war s3://ashokjenkins"
+      - "aws s3 sync my-web-app.war s3://ashokjenkins"
 version: 0.1
