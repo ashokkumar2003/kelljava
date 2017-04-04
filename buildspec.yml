@@ -1,19 +1,16 @@
+--- 
+JAVA_HOME: /opt/java-8-openjdk-amd64
+artifacts: ~
+build: ~
+commands: 
+  - "echo Build completed on `date`"
+discard-paths: true
+environment_variables: ~
+files: 
+  - target/my-web-app.war
+phases: ~
+plaintext: ~
+post_build: ~
+pre_build: ~
 version: 0.1
-environment_variables:
-plaintext:
-JAVA_HOME: "/opt/java-8-openjdk-amd64"
-phases:
-pre_build:
-commands:
-- echo This is pre_build
-build:
-commands:
-- echo Starting build `date`
-- mvn clean package
-post_build:
-commands:
-- echo Build completed on `date`
-artifacts:
-files:
-- target/my-web-app.war
-discard-paths: yes
+
