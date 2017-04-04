@@ -1,15 +1,11 @@
 --- 
-artifacts: ~
-build: ~
-commands: 
-  - "echo Build completed on `date`"
-discard-paths: true
-environment_variables: ~
-files: 
-  - target/my-web-app.war
-phases: ~
-plaintext: ~
-post_build: ~
-pre_build: ~
+artifacts: 
+  discard-paths: true
+  files: 
+    - target/my-web-app.war
+phases: 
+  post_build: 
+    commands: 
+      - "echo Build completed on `date`"
+      - "mvn package"
 version: 0.1
-
