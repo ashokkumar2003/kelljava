@@ -1,9 +1,11 @@
-rtifacts: 
-  discard-paths: true
+--- 
+artifacts: 
   files: 
-    - my-web-app.war
+    - "**/*"
 phases: 
-  post_build: 
+  build: 
     commands: 
       - "echo Build completed on `date`"
+      - "mvn package"
 version: 0.1
+
