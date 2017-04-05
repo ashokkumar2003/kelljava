@@ -1,11 +1,12 @@
---- 
-artifacts: 
-  files: 
-    - "**/*"
-phases: 
-  build: 
-    commands: 
-      - "echo Build completed on `date`"
-      - "mvn package"
 version: 0.1
 
+phases:
+  build:
+    commands:
+      - mvn clean install -P release -Dmaven.test.skip=true
+
+artifacts:
+  type: zip
+  files:
+    - target/my-web-app.war
+  discard-paths: yes
