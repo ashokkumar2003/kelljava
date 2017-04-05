@@ -6,7 +6,6 @@ phases:
       - mvn clean install
 
 artifacts:
-  type: None
   files:
     - target/my-web-app.war
   discard-paths: yes
