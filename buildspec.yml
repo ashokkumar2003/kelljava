@@ -1,7 +1,7 @@
 rtifacts: 
   discard-paths: true
   files: 
-    - **/my-web-app.war
+    - my-web-app.war
 phases: 
   post_build: 
     commands: 
