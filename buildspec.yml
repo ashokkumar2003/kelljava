@@ -6,5 +6,4 @@ phases:
   post_build: 
     commands: 
       - "echo Build completed on `date`"
-      - "mvn package"
 version: 0.1
